@@ -5,7 +5,7 @@ import headerLogo from "../assets/img/header/header-logo-img.svg";
 import { useTranslation } from "react-i18next";
 import Lang from "../components/Language/Lang";
 import { Link, NavLink } from "react-router-dom";
-import Burgermenu from "../components/burgermenu/Burgermenu";
+import Burgermenu from "../components/Burgermenu/Burgermenu";
 function Header({ text }) {
   const [t, i18n] = useTranslation("translation");
   const [open, setOpen] = useState(false);

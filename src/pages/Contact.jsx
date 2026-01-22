@@ -4,7 +4,7 @@ import contactGpsIco from "../assets/img/body/contact/contact-gps-ico.svg";
 import contactPhoneIco from "../assets/img/body/contact/contact-phone-ico.svg";
 import comtactEmailIco from "../assets/img/body/contact/contact-email-ico.svg";
 import contactMapImg from "../assets/img/body/contact/contact-map-img.png";
-import PageBanner from "../components/pageBanner/pageBanner";
+import PageBanner from "../components/PageBanner/PageBanner";
 function Contact() {
   const { data } = useGlobalFetch();
   const [t] = useTranslation("translation");

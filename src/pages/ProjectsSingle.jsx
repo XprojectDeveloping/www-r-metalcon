@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import useGlobalFetch from "../components/UseGlobalFetch/useGlobalFetch.jsx";
 import { useTranslation } from "react-i18next";
-import PageBanner from "../components/pageBanner/pageBanner.jsx";
+import PageBanner from "../components/PageBanner/PageBanner.jsx";
 
 function ProjectsSingle() {
   const { data } = useGlobalFetch();

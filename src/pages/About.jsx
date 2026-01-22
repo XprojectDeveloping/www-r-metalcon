@@ -2,7 +2,7 @@ import useGlobalFetch from "../components/UseGlobalFetch/useGlobalFetch";
 import { getMultiLang as ml } from "../components/Language/translation/MultiLang.js";
 import DOMPurify from "dompurify";
 import { useTranslation } from "react-i18next";
-import PageBanner from "../components/pageBanner/pageBanner.jsx";
+import PageBanner from "../components/PageBanner/PageBanner.jsx";
 function About() {
   const { data } = useGlobalFetch();
   const [t] = useTranslation("translation");

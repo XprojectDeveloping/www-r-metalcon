@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import useGlobalFetch from "../components/UseGlobalFetch/useGlobalFetch";
 import HomePageProjects from "../components/Sections/HomePageProjects";
-import PageBanner from "../components/pageBanner/PageBanner";
+import PageBanner from "../components/PageBanner/PageBanner";
 
 function Projects() {
   const { data } = useGlobalFetch();

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import pageBannerArrow from "../pageBanner/pageBanner-arrow-ico.svg";
+import pageBannerArrow from "./pageBanner-arrow-ico.svg";
 function PageBanner({ dataBanner, myLink, text }) {
   const [t] = useTranslation("translation");
   return (
