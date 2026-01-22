@@ -1,8 +1,7 @@
 import { useParams } from "react-router-dom";
-import { getMultiLang as ml } from "../components/Language/translation/MultiLang.js";
 import useGlobalFetch from "../components/UseGlobalFetch/useGlobalFetch.jsx";
-import PageBanner from "../components/pageBanner/pageBanner";
 import { useTranslation } from "react-i18next";
+import PageBanner from "../components/pageBanner/pageBanner.jsx";
 
 function ProjectsSingle() {
   const { data } = useGlobalFetch();

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import PageBanner from "../components/pageBanner/pageBanner";
 import useGlobalFetch from "../components/UseGlobalFetch/useGlobalFetch";
+import PageBanner from "../components/pageBanner/pageBanner";
 
 function Certificate() {
   const { data } = useGlobalFetch();

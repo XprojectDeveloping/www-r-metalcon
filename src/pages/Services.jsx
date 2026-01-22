@@ -1,11 +1,10 @@
 import servicesCardArrow from "../assets/img/body/services-card-arrow.svg";
-import { Link, NavLink, useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { getMultiLang as ml } from "../components/Language/translation/MultiLang.js";
-import HomePageServicesList from "../components/Sections/HomePageServicesList.jsx";
 import useGlobalFetch from "../components/UseGlobalFetch/useGlobalFetch.jsx";
-import PageBanner from "../components/pageBanner/pageBanner.jsx";
 import { useTranslation } from "react-i18next";
 import DOMPurify from "dompurify";
+import PageBanner from "../components/pageBanner/PageBanner.jsx";
 function Services() {
   const { data } = useGlobalFetch();
   const [t] = useTranslation("translation");
