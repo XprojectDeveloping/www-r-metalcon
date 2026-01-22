@@ -1,0 +1,241 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --servicesnth1: #10446b;
+  --servicesnth2: #0f3e60;
+  --servicesnth3: #10446b;
+  --servicesnth4: #124a72;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-num-hov {
+  transition: 0.3s linear;
+}
+
+/* 
+main .banner-bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #316996f2;
+  mix-blend-mode: multiply;
+} */
+
+main h1 {
+  color: #ffffff;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 2rem;
+}
+
+main p {
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+footer {
+  background-image: url("./assets/img/footer/footer-bg-img.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-card:nth-child(1) {
+  background: var(--servicesnth1);
+}
+
+.services-card:nth-child(2) {
+  background: var(--servicesnth2);
+}
+
+.services-card:nth-child(3) {
+  background: var(--servicesnth3);
+}
+
+.services-card:nth-child(4) {
+  background: var(--servicesnth4);
+}
+
+.slider-item {
+  position: relative;
+}
+
+.slider-item::before {
+  content: "";
+  background: #316996f2;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.services-hov {
+  transition: 0.3s linear;
+}
+
+.services-hov:hover {
+  background-color: #124a72;
+  mix-blend-mode: multiply;
+}
+
+.services-hov .arrow {
+  transition: 0.3s linear;
+}
+
+.services-hov .arrow:hover {
+  transform: rotate(90deg);
+}
+
+.specialCardHov:hover,
+.specialCardHov:hover * {
+  background-color: #10446b;
+  color: #ffffff;
+}
+
+.projectBox::before {
+  content: "";
+  background: #316996f2;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: multiply;
+  position: absolute;
+  transition: all 0.4s linear;
+  transform: scaleY(0) scaleX(0);
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  opacity: 0;
+}
+
+.projectBox:hover:before {
+  transform: scaleY(1) scaleX(1);
+  opacity: 1;
+}
+
+.projectBox:hover .text {
+  bottom: 0;
+  opacity: 1;
+}
+
+.pageBanner {
+  position: relative;
+}
+
+.pageBanner::before {
+  content: "";
+  background: #316996f2;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+input {
+  border: 1px solid #000000;
+  outline: none;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  width: 400px;
+  color: #5e5e5e;
+}
+
+.buttonBtn {
+  border: 1px solid #000000;
+  color: #5e5e5e;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+}
+
+.active {
+  color: #12649e;
+}
+
+.active .arrow-down {
+  transition: 0.3s linear;
+}
+
+.active .arrow-down {
+  transform: rotate(90deg);
+}
+
+@media screen and (min-width: 1999px) {
+  body {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  header {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  .burger-hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 1999px) {
+  .burger-hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  main h1 {
+    font-size: 5.5rem;
+  }
+  main p {
+    font-size: 1.5rem;
+  }
+
+  .servicesText span {
+    font-size: 2.5rem;
+  }
+
+  .servicesText ul li {
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main h1 {
+    font-size: 4rem;
+  }
+  main p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 566px) {
+  main h1 {
+    font-size: 2.4rem;
+  }
+  main p {
+    font-size: 1.3rem;
+  }
+}
